@@ -1,0 +1,9 @@
+version: '3'
+services:
+  build:
+    build: .
+    volumes:
+      - ./lib:/code/lib
+      - ./package.json:/code/package.json
+      - ./yarn.lock:/code/yarn.lock
+      - ./webpack.config.js:/code/webpack.config.js
